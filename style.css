@@ -1,192 +1,28 @@
-/* ================= ROOT ================= */
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.65;
-    background: linear-gradient(to bottom, #f5f7fa, #e4e8f0);
+    background: #f4f6fb;
     color: #2d2d2d;
 }
 
-/* ================= HEADER (HERO IDENTITY) ================= */
+/* Header */
 header {
     background: linear-gradient(to right, #667eea, #764ba2);
     color: white;
-    padding: 38px 20px;
     text-align: center;
+    padding: 40px 20px;
 }
 
 header h1 {
     font-size: 30px;
-    letter-spacing: 1.2px;
     margin-bottom: 6px;
 }
 
 header p {
-    font-size: 14px;
-    margin: 3px 0;
-    opacity: 0.95;
-}
-
-/* ================= SECTION WRAPPER ================= */
-section {
-    max-width: 900px;
-    margin: 14px auto;
-    padding: 22px 22px;
-}
-
-/* ================= SECTION TITLE ================= */
-h2 {
-    font-size: 20px;
-    color: #4c4ad5;
-    margin-bottom: 12px;
-    position: relative;
-    padding-left: 12px;
-}
-h2 {
-    display: flex;
-    align-items: center;
-    gap: 8px;   /* space between symbol & text */
-}
-
-
-h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 4px;
-    height: 18px;
-    width: 4px;
-    background: linear-gradient(to bottom, #667eea, #764ba2);
-    border-radius: 2px;
-}
-
-/* ================= RESUME CARD ================= */
-.card {
-    background: linear-gradient(to right, #ffffff, #f6f8ff);
-    padding: 16px 18px;
-    margin-top: 10px;
-    border-radius: 12px;
-    border-left: 6px solid #667eea;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: all 0.25s ease;
-}
-
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
-}
-
-.card h3 {
-    margin: 6px 0 6px;
-    font-size: 16px;
-    color: #333;
-}
-
-.card p {
     margin: 4px 0;
 }
 
-/* ================= SKILLS ================= */
-.skill {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 6px 0;
-    font-size: 14px;
-}
-
-.stars {
-    color: #f5a623;
-    letter-spacing: 1px;
-}
-
-/* Skill bar */
-.skill-bar {
-    width: 100%;
-    height: 7px;
-    background: #e0e4f7;
-    border-radius: 5px;
-    margin-top: 4px;
-}
-
-.skill-bar span {
-    display: block;
-    height: 100%;
-    border-radius: 5px;
-    background: linear-gradient(to right, #667eea, #764ba2);
-}
-
-/* ================= LINKS ================= */
-a {
-    color: #4c4ad5;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* ================= FOOTER ================= */
-footer {
-    background: linear-gradient(to right, #2f2f44, #1f1f33);
-    color: white;
-    text-align: center;
-    padding: 14px;
-    font-size: 13px;
-    margin-top: 25px;
-}
-/* ================= MOBILE RESUME VIEW ================= */
-@media (max-width: 768px) {
-
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        padding: 28px 16px;
-    }
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    header p {
-        font-size: 13px;
-    }
-
-    section {
-        margin: 10px;
-        padding: 16px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    .card {
-        padding: 14px;
-        border-left: 4px solid #667eea;
-    }
-
-    .skill {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-    }
-
-    .stars {
-        font-size: 13px;
-    }
-
-    footer {
-        font-size: 12px;
-        padding: 10px;
-    }
-}
-
-/* ================= RESUME DOWNLOAD BUTTON ================= */
+/* Resume Button */
 .resume-btn {
     display: inline-block;
     margin-top: 14px;
@@ -194,14 +30,51 @@ footer {
     background: white;
     color: #5a4fcf;
     border-radius: 25px;
-    font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease;
 }
 
 .resume-btn:hover {
     background: #f1f3ff;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #4c4ad5;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 16px;
+    margin-top: 10px;
+    border-left: 5px solid #667eea;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Skills */
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+
+.stars {
+    color: #f5a623;
+}
+
+/* Footer */
+footer {
+    background: #1f1f33;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
 }
